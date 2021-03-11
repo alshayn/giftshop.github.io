@@ -1,0 +1,486 @@
+ul, nav, li {
+  list-style: none;
+}
+
+a, h1, p, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+/* Хедер */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+header nav li a {
+  color: black;
+}
+
+header li:hover a {
+  color: #F7941E;
+  text-decoration: underline;
+}
+
+.secbtn {
+  color: #F7941E;
+  border-color: #F7941E;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+    flex-direction: column;
+  }
+
+  .secbtn {
+    margin-top: 20px;
+  }
+}
+
+/* Первая секция */
+.gift, .work {
+  background-color: #F1F1F2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gift .content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gift .content h4 {
+  font-size: 56px;
+  margin: 55px;
+}
+
+.gift .content p {
+  font-size: 20px;
+  margin: 0px 15px 55px 55px;
+}
+
+.gift img {
+  flex-basis: 50%;
+  width: 10px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.primbtn {
+  color: white;
+  background-color: #F7941E;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 55px;
+}
+
+@media (max-width: 770px) {
+  .gift .content {
+    width: 100px;
+    height: auto;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gift .content h4 {
+    margin: 0px;
+  }
+
+  .gift .content p {
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .gift .primbtn {
+    margin: 0px;
+    margin-bottom: 25px;
+  }
+
+  .gift img {
+    flex-basis: 100%;
+    width: 350px;
+    height: auto;
+  }
+}
+
+/* вторая секция */
+.work .content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.work .content h4 {
+  font-size: 32px;
+  margin-left: 55px;
+}
+
+.work .content p {
+  font-size: 20px;
+  margin: 0px 55px 55px 55px;
+}
+
+.work img {
+  align-items: stretch;
+  flex-basis: 50%;
+  width: 10px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.work .secbtn {
+  color: #F7941E;
+  border-color: #F7941E;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 55px;
+}
+
+@media (max-width: 770px) {
+  .started .btns .blbtn {
+    margin-bottom: 15px;
+  }
+
+  .work {
+    flex-direction: column-reverse;
+  }
+
+  .work .content {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .work .content h4 {
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .work .content p {
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+
+  .content .secbtn {
+    margin: 0px;
+    align-self: center;
+  }
+
+  .work img {
+    margin-top: 15px;
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Секция с карточками */
+.examples .title {
+  margin-top: 90px;
+}
+
+.examples .title h4 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.examples .title p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 55px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.examples .cards .card {
+  background-color: #FAFAFA;
+  width: 270px;
+  height: 430px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.examples .cards .card img {
+  border-radius: 5px;
+}
+
+.examples .cards h4 {
+  margin: 20px 0px 75px 15px;
+}
+
+.examples .cards a {
+  margin-left: 15px;
+  margin-top: 25px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.examples .cards .card:hover {
+  box-shadow: 16px 10px 38px -15px rgba(0, 0, 0, 0.54);
+  background-color: white;
+}
+
+/* Четвертая секция */
+.started {
+  background-color: #F7941E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.started h4 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: 80px;
+}
+
+.started p {
+  font-size: 32px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.started .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.started .btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.started .btns .blbtn {
+  background-color: black;
+  padding: 20px 30px 20px 30px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.started .btns .blscbtn {
+  color: black;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px 30px 20px 30px;
+}
+
+/* Пятая секция */
+.blog .title h4 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.blog .title p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.blog .card {
+  display: flex;
+  justify-content: center;
+}
+
+.blog .card .content {
+  background-color: #231F20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.blog .card .content h4 {
+  font-size: 14px;
+  color: white;
+}
+
+.blog .card .content p {
+  font-size: 48px;
+  color: white;
+}
+
+.blog .card .content a {
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .blog .card {
+    flex-wrap: wrap;
+  }
+
+  .blog .card img {
+    flex-basis: 100%;
+  }
+
+  .blog .card .content {
+    flex-basis: 100%;
+  }
+
+  .blog .giftcards {
+    margin-top: 25px;
+  }
+
+  .blog .giftcards .giftcard1 {
+    flex-basis: 100%;
+  }
+
+  .blog .giftcards .giftcard2 {
+    flex-basis: 100%;
+  }
+}
+
+.blog .giftcards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog .giftcards .giftcard1 h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog .giftcards .giftcard1 p {
+  font-size: 18px;
+}
+.blog .giftcards .giftcard1 a{
+  color: black;
+}
+.blog .giftcards .giftcard2 a{
+  color: black;
+}
+.blog .giftcards .giftcard1 {
+  height: 450px;
+  width: 770px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+
+.blog .giftcards .giftcard2 h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog .giftcards .giftcard2 p {
+  font-size: 18px;
+}
+
+.blog .giftcards .giftcard2 {
+  height: 450px;
+  width: 770px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  justify-content: space-around;
+}
+
+.blog .giftcards .giftcard1:hover {
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+}
+
+.blog .giftcards .giftcard2:hover {
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  justify-content: space-around;
+}
+
+.footer .footernav {
+  display: flex;
+  border-bottom: 1px solid;
+  margin-bottom: 45px;
+}
+
+.footer .footernav li {
+  margin: 0 55px;
+  padding-bottom: 45px;
+}
+.footer .footernav a:hover {
+color:#F7941E;
+}
+.footer .footernav .logo {
+color:#F7941E;
+}
+
+@media (max-width: 760px) {
+  .footer .footernav {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 0px;
+  }
+
+  .footer .footernav li {
+    align-items: flex-start;
+    margin: 5px;
+    padding: 0px;
+  }
+
+  .footer {
+    padding-top: 10px;
+  }
+}
+
+.footer .footernav a {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
